@@ -47,7 +47,7 @@
       output.textContent = 'www.'+RandomW(5)+"/"+RandomW(10);
     }, 1000);
 
-    fetch("_rcn2006.png");
+    fetch("_rcn2006.png").then(response => response.blob());
   </script>
 </body>
 </html>
