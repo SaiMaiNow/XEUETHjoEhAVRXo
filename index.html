@@ -3,11 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <title>WHOAMI</title>
-  <link rel="stylesheet" href="/index.css">
 </head>
 <body>
-  <h1>
-    Reverse URL
-  </h1>
+  
+  <h2 id="text">Find pictures on Network</h2>
+  <a id="output" style="font-size: 30px;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
+  <script>
+    function DeviceType() {
+      const ua = navigator.userAgent;
+    
+      if (/mobile/i.test(ua)) {
+        return "Mobile";
+      } else if (/tablet/i.test(ua)) {
+        return "Tablet";
+      } else {
+        return "PC";
+      }
+    }
+    
+    const deviceType = DeviceType();
+    if (deviceType != "PC") {
+      const a = document.getElementById('text');
+      a.textContent = "Open this Web on PC!!!";
+      a.style.color = 'red';
+      document.getElementById('output').style.display = 'none';
+      const img = document.createElement("img");
+      img.src = "https://img2.pic.in.th/pic/E_iOlWsVQAITM_t.jpg";
+      img.style.maxWidth = "50%"
+      document.body.appendChild(img);
+    }
+
+    function RandomW(length) {
+      const chars = 'abcdefghijklmnopqrstuvwxyz';
+      let word = '';
+      for (let i = 0; i < length; i++) {
+        word += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return word;
+    }
+
+    setInterval(() => {
+      const output = document.getElementById('output');
+      output.textContent = 'www.'+RandomW(5)+"/"+RandomW(10);
+    }, 1000);
+  </script>
 </body>
 </html>
