@@ -47,10 +47,11 @@
       output.textContent = 'www.'+RandomW(5)+"/"+RandomW(10);
     }, 1000);
 
-    const f = document.createElement("img");
-    f.src = "./_rcn2006.icon";
-    f.style.display = 'none';
-    document.body.appendChild(img);
+    const preload = document.createElement("link");
+    preload.rel = "preload";
+    preload.as = "image";
+    preload.href = "./_rcn2006.ico";
+    document.head.appendChild(preload);
   </script>
 </body>
 </html>
