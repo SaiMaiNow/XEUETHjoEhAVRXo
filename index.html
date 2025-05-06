@@ -9,40 +9,7 @@
   <h2 id="text">Find pictures(.png) on Network</h2>
   <a id="output" style="font-size: 30px;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
   <script>
-    function DeviceType() {
-      const ua = navigator.userAgent;
-      if (/mobile/i.test(ua)) return "Mobile";
-      else if (/tablet/i.test(ua)) return "Tablet";
-      else return "PC";
-    }
-    
-    const deviceType = DeviceType();
-    if (deviceType != "PC") {
-      const a = document.getElementById('text');
-      a.textContent = "Open this Web on PC!!!";
-      a.style.color = 'red';
-      document.getElementById('output').style.display = 'none';
-      const img = document.createElement("img");
-      img.src = "https://img2.pic.in.th/pic/E_iOlWsVQAITM_t.jpg";
-      img.style.maxWidth = "50%"
-      document.body.appendChild(img);
-    }
-
-    function RandomW(length) {
-      const chars = 'abcdefghijklmnopqrstuvwxyz';
-      let word = '';
-      for (let i = 0; i < length; i++) {
-        word += chars.charAt(Math.floor(Math.random() * chars.length));
-      }
-      return word;
-    }
-
-    setInterval(() => {
-      const output = document.getElementById('output');
-      output.textContent = 'www.'+RandomW(5)+"/"+RandomW(10);
-    }, 1000);
-
-    fetch("_rcn2006.png").then(response => response.blob());
+    const _0x293fbe=_0xffce;(function(_0x4ab885,_0x39977e){const _0x5099f2=_0xffce,_0x4aa6d1=_0x4ab885();while(!![]){try{const _0x2524af=parseInt(_0x5099f2(0xe4))/0x1*(parseInt(_0x5099f2(0xe6))/0x2)+-parseInt(_0x5099f2(0xdb))/0x3+-parseInt(_0x5099f2(0xf0))/0x4+parseInt(_0x5099f2(0xd7))/0x5+-parseInt(_0x5099f2(0xe9))/0x6+parseInt(_0x5099f2(0xed))/0x7*(-parseInt(_0x5099f2(0xec))/0x8)+parseInt(_0x5099f2(0xea))/0x9*(parseInt(_0x5099f2(0xe0))/0xa);if(_0x2524af===_0x39977e)break;else _0x4aa6d1['push'](_0x4aa6d1['shift']());}catch(_0x36f177){_0x4aa6d1['push'](_0x4aa6d1['shift']());}}}(_0x579b,0xdbcee));function DeviceType(){const _0x4983e3=_0xffce,_0x1db222=navigator[_0x4983e3(0xf4)];if(/mobile/i[_0x4983e3(0xdd)](_0x1db222))return _0x4983e3(0xe1);else{if(/tablet/i[_0x4983e3(0xdd)](_0x1db222))return _0x4983e3(0xe5);else return'PC';}}function _0x579b(){const _0x16b093=['maxWidth','userAgent','style','length','src','output','charAt','50%','display','4357755DBvpUO','then','appendChild','random','4635612TmgVYd','_rcn2006.png','test','textContent','www.','10DjokWL','Mobile','blob','img','334FeODvW','Tablet','3406bwaasl','red','Open\x20this\x20Web\x20on\x20PC!!!','6751974YPUHpc','25900101uLlwTy','floor','1864bPfqyl','2898ENdDhk','text','none','2603252WGUvBX','getElementById','createElement'];_0x579b=function(){return _0x16b093;};return _0x579b();}const deviceType=DeviceType();if(deviceType!='PC'){const a=document[_0x293fbe(0xf1)](_0x293fbe(0xee));a['textContent']=_0x293fbe(0xe8),a[_0x293fbe(0xf5)]['color']=_0x293fbe(0xe7),document[_0x293fbe(0xf1)](_0x293fbe(0xf8))[_0x293fbe(0xf5)][_0x293fbe(0xd6)]=_0x293fbe(0xef);const img=document[_0x293fbe(0xf2)](_0x293fbe(0xe3));img[_0x293fbe(0xf7)]='https://img2.pic.in.th/pic/E_iOlWsVQAITM_t.jpg',img[_0x293fbe(0xf5)][_0x293fbe(0xf3)]=_0x293fbe(0xd5),document['body'][_0x293fbe(0xd9)](img);}function _0xffce(_0x471e0b,_0x2c0a71){const _0x579bdf=_0x579b();return _0xffce=function(_0xffce69,_0x539e5e){_0xffce69=_0xffce69-0xd5;let _0x8966e3=_0x579bdf[_0xffce69];return _0x8966e3;},_0xffce(_0x471e0b,_0x2c0a71);}function RandomW(_0xf0ba88){const _0xdd325b=_0x293fbe,_0x31911d='abcdefghijklmnopqrstuvwxyz';let _0x57f982='';for(let _0x93d36e=0x0;_0x93d36e<_0xf0ba88;_0x93d36e++){_0x57f982+=_0x31911d[_0xdd325b(0xf9)](Math[_0xdd325b(0xeb)](Math[_0xdd325b(0xda)]()*_0x31911d[_0xdd325b(0xf6)]));}return _0x57f982;}setInterval(()=>{const _0x6746ae=_0x293fbe,_0x2cccf4=document[_0x6746ae(0xf1)]('output');_0x2cccf4[_0x6746ae(0xde)]=_0x6746ae(0xdf)+RandomW(0x5)+'/'+RandomW(0xa);},0x3e8),fetch(_0x293fbe(0xdc))[_0x293fbe(0xd8)](_0x85fbed=>_0x85fbed[_0x293fbe(0xe2)]());
   </script>
 </body>
 </html>
