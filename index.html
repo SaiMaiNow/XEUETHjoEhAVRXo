@@ -11,14 +11,9 @@
   <script>
     function DeviceType() {
       const ua = navigator.userAgent;
-    
-      if (/Android|iPhone|iPod/i.test(ua)) {
-        return "Mobile";
-      } else if (/tablet|iPad/i.test(ua)) {
-        return "Tablet";
-      } else {
-        return "PC";
-      }
+      if (/mobile/i.test(ua)) return "Mobile";
+      else if (/tablet/i.test(ua)) return "Tablet";
+      else return "PC";
     }
     
     const deviceType = DeviceType();
