@@ -12,7 +12,7 @@
     function DeviceType() {
       const ua = navigator.userAgent;
     
-      if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent)) {
+      if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua)) {
         return "Mobile";
       } else if (/tablet|iPad/i.test(ua)) {
         return "Tablet";
